@@ -1,8 +1,8 @@
 import React from 'react';
-import bukContent from './bukContent.json';
+import bukContent from './data/bukContent.json';
 import arrow from './right-arrow.svg';
-class Bukwild extends React.Component{
 
+class Bukwild extends React.Component{
     componentDidMount(){
         document.getElementById('test').className += " fade-in";
         const animated = document.querySelector('.fade-in');
