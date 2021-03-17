@@ -40,7 +40,7 @@ class Bukwild extends React.Component{
                         <span className="LETS-TALK">LET'S TALK.</span>
                         <img src={arrow} alt="arrow icon"/>
                     </div>
-                </div>
+                </div> 
             </>
         );
     }
