@@ -83,7 +83,13 @@ div:not(.main-container) {
   padding: 12px 1px 12px 0;
   border: solid 1px #ffffff;
   cursor: pointer;
+  transition: .1s;
+  transition-timing-function: ease-in;
+}
 
+#contact-button:hover {
+  border-color: var(--main-yellow);
+  color: var(--main-yellow);
 }
 
 .nav-link {
@@ -196,19 +202,11 @@ div:not(.main-container) {
 
 /*Animations*/
 .fade-in {
-  -webkit-animation: fadein 1s; 
-  -moz-animation: fadein 1s; 
-  -ms-animation: fadein 1s; 
-  -o-animation: fadein 1s; 
-   animation: fadein 1s;
+  -webkit-animation: fadein 1.5s; 
+   animation: fadein 1.5s;
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@-moz-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
@@ -218,8 +216,108 @@ div:not(.main-container) {
   to   { opacity: 1; }
 }
 
-@-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+.fade-up {
+  position: relative;
+  -webkit-animation: fadeup 1.5;
+  animation: fadeup 1.5s;
 }
 
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    top: 70px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@-webkit-keyframes fadeup {
+  from {
+    opacity: 0;
+    top: 70px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.fade-left {
+  position: relative;
+  animation: fadeleft 1.5s;
+  -webkit-animation: fadeleft 1.5s;
+}
+
+@keyframes fadeleft {
+  from {
+    opacity: 0;
+    left: -70px;
+  }
+
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@-webkit-keyframes fadeleft {
+  from {
+    opacity: 0;
+    left: -70px;
+  }
+
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.fade-right {
+  position: relative;
+  animation: faderight 1.5s;
+  -webkit-animation: faderight 1.5s;
+}
+
+@keyframes faderight {
+  from {
+    opacity: 0;
+    left: 70px;
+  }
+
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@-webkit-keyframes faderight {
+  from {
+    opacity: 0;
+    left: 70px;
+  }
+
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+
+.background-transition {
+  animation: blurtoclear 1.5s;
+}
+
+
+@keyframes blurtoclear {
+  from {
+    filter: blur(8px);
+  }
+
+  to {
+    filter: blur(0);
+  }
+}

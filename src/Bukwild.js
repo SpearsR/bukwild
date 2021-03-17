@@ -34,7 +34,7 @@ class Bukwild extends React.Component{
                 </div>
 
                 {/*Here is the CTA*/}
-                <div className="cta-box">
+                <div className="cta-box fade-up">
                     <div className="cta-text">{bukContent.pages[this.props.index].blocks[0].cta}</div>
                     <div className="lets-talk-button">
                         <span className="LETS-TALK">LET'S TALK.</span>
