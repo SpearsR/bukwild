@@ -1,6 +1,6 @@
 import React from 'react';
 import Bukwild from './Bukwild';
-import content from './content.json';
+import bukContent from './bukContent.json';
 import logo from './abc_logo.svg';
 
 class App extends React.Component{
@@ -12,7 +12,7 @@ class App extends React.Component{
     }
 
     render(){
-        const backgroundUrl = require(`./backgrounds/${content.pages[this.state.index].blocks[0].background}`);
+        const backgroundUrl = require(`./backgrounds/${bukContent.pages[this.state.index].blocks[0].background}`);
         return(
             <div style={{
                 backgroundImage: `url(${backgroundUrl.default})`

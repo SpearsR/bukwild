@@ -1,5 +1,5 @@
 import React from 'react';
-import content from './content.json';
+import bukContent from './bukContent.json';
 import arrow from './right-arrow.svg';
 class Bukwild extends React.Component{
 
@@ -27,15 +27,15 @@ class Bukwild extends React.Component{
     render(){
      return(
             <>  
-                {/*Here is the middle headline content*/}
+                {/*Here is the middle headline bukContent*/}
                 <div id="test" className="headings">
-                    <div className="headline">{content.pages[this.props.index].blocks[0].headline}</div>
-                    <div className="subhead">{content.pages[this.props.index].blocks[0].subhead}</div>
+                    <div className="headline">{bukContent.pages[this.props.index].blocks[0].headline}</div>
+                    <div className="subhead">{bukContent.pages[this.props.index].blocks[0].subhead}</div>
                 </div>
 
                 {/*Here is the CTA*/}
                 <div className="cta-box">
-                    <div className="cta-text">{content.pages[this.props.index].blocks[0].cta}</div>
+                    <div className="cta-text">{bukContent.pages[this.props.index].blocks[0].cta}</div>
                     <div className="lets-talk-button">
                         <span className="LETS-TALK">LET'S TALK.</span>
                         <img src={arrow} alt="arrow icon"/>
