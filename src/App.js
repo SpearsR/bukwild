@@ -13,7 +13,7 @@ class App extends React.Component{
             index : 0
         }
     }
-
+ 
     render(){
         const backgroundUrl = bukContent.pages[this.state.index].blocks[0].background.split('.')[0];
         
