@@ -1,6 +1,5 @@
 import React from 'react';
 import Bukwild from './Bukwild';
-import bukContent from './data/bukContent.json';
 import logo from './abc_logo.svg';
 var slide_one = require('./backgrounds/slide_one.jpg');
 var slide_two =  require('./backgrounds/slide_two.jpg');
@@ -15,11 +14,12 @@ class App extends React.Component{
     }
  
     render(){
-        const backgroundUrl = bukContent.pages[this.state.index].blocks[0].background.split('.')[0];
+        //const backgroundUrl = bukContent.pages[this.state.index].blocks[0].background;
+        let images = [slide_one,slide_two,slide_three];
         
         return(
             <div style={{
-                backgroundImage: `url(${eval(backgroundUrl).default})`
+                backgroundImage: `url(${images[this.state.index].default})`
                 }} className="main-container">
                 <img src='./backgrounds/slide_one.jpg' alt="hi" />
                 <div className="top-ui">
